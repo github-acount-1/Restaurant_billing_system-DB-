@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+SplashScreen-Image: restaurant/billing/system/fxml/splash.gif
+X-COMMENT: Main-Class will be added automatically by build

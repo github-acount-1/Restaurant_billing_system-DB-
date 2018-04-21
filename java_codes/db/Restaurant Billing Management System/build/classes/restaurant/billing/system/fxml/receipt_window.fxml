@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane prefHeight="586.0" prefWidth="312.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="restaurant.billing.system.ReceiptWindowController">
+  <content>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="345.0" prefWidth="312.0">
+         <children>
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="57.0" prefWidth="328.0" style="-fx-background-color: #2f8e4f;" text="MAK Restaurant Receipt" textFill="WHITE" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-30.0" AnchorPane.topAnchor="-1.0">
+               <font>
+                  <Font name="Old English Text MT" size="24.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="1.0" layoutY="55.0" prefHeight="530.0" prefWidth="317.0" AnchorPane.bottomAnchor="-240.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="55.0">
+               <children>
+                  <Label layoutX="-2.0" prefHeight="47.0" prefWidth="312.0" text="     Address: 5kilo infront of AAit" textAlignment="CENTER">
+                     <font>
+                        <Font name="Matura MT Script Capitals" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="111.0" layoutY="47.0" prefHeight="17.0" prefWidth="46.0" text="Date:">
+                     <font>
+                        <Font name="Perpetua Titling MT Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="date" layoutX="154.0" layoutY="47.0" prefHeight="17.0" prefWidth="121.0" />
+                  <Label layoutX="111.0" layoutY="72.0" text="TIN number: 1000045879">
+                     <font>
+                        <Font name="Perpetua Titling MT Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="112.0" layoutY="95.0" prefHeight="15.0" prefWidth="56.0" text="FS num:">
+                     <font>
+                        <Font name="Perpetua Titling MT Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="orderNumber" layoutX="174.0" layoutY="94.0" prefHeight="17.0" prefWidth="102.0" />
+                  <Label layoutX="18.0" layoutY="123.0" text="Cashier:">
+                     <font>
+                        <Font name="Perpetua Titling MT Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cashierName" layoutX="81.0" layoutY="122.0" prefHeight="17.0" prefWidth="126.0" />
+                  <Label layoutX="20.0" layoutY="148.0" text="Waiter:">
+                     <font>
+                        <Font name="Perpetua Titling MT Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="waiterName" layoutX="86.0" layoutY="147.0" prefHeight="17.0" prefWidth="118.0" />
+                  <TableView fx:id="receiptTable" layoutX="2.0" layoutY="175.0" prefHeight="213.0" prefWidth="305.0">
+                    <columns>
+                      <TableColumn fx:id="itemName" prefWidth="119.0" text="Item" />
+                      <TableColumn fx:id="quantity" prefWidth="64.0" text="Quantity" />
+                        <TableColumn fx:id="price" prefWidth="118.0" text="Price" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="69.0" layoutY="403.0" text="Before Vat:">
+                     <font>
+                        <Font name="Perpetua Titling MT Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="121.0" layoutY="428.0" prefHeight="15.0" prefWidth="35.0" text="Tax: ">
+                     <font>
+                        <Font name="Perpetua Titling MT Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="105.0" layoutY="456.0" prefHeight="15.0" prefWidth="54.0" text="Total:">
+                     <font>
+                        <Font name="Perpetua Titling MT Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="beforeVAT" layoutX="157.0" layoutY="402.0" prefHeight="17.0" prefWidth="116.0" />
+                  <Label fx:id="tax" layoutX="155.0" layoutY="427.0" prefHeight="17.0" prefWidth="120.0" />
+                  <Label fx:id="total" layoutX="155.0" layoutY="455.0" prefHeight="17.0" prefWidth="120.0" />
+                  <Label layoutX="5.0" layoutY="480.0" prefHeight="38.0" prefWidth="300.0" text="      Thank you for coming!!!" textAlignment="CENTER">
+                     <font>
+                        <Font name="Matura MT Script Capitals" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+  </content>
+</ScrollPane>

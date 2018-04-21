@@ -1,0 +1,47 @@
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Restaurant Billing Management System.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iUmVzdGF1cmFudCBCaWxsaW5nIE1hbmFnZW1lbnQgU3lzdGVtLmpubHAiPg0KICA8aW5mb3JtYXRpb24+DQogICAgPHRpdGxlPlJlc3RhdXJhbnQgQmlsbGluZyBNYW5hZ2VtZW50IFN5c3RlbTwvdGl0bGU+DQogICAgPHZlbmRvcj5BYmVsPC92ZW5kb3I+DQogICAgPGRlc2NyaXB0aW9uPm51bGw8L2Rlc2NyaXB0aW9uPg0KICAgIDxvZmZsaW5lLWFsbG93ZWQvPg0KICA8L2luZm9ybWF0aW9uPg0KICA8cmVzb3VyY2VzPg0KICAgIDxqMnNlIHZlcnNpb249IjEuNisiIGphdmEtdm0tYXJncz0iLXNwbGFzaDpzcmMvcmVzdGF1cmFudC9iaWxsaW5nL3N5c3RlbS9meG1sL3NwbGFzaC5naWYgIiAgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPg0KICAgIDxqYXIgaHJlZj0ibGliXG15c3FsLWNvbm5lY3Rvci1qYXZhLTUuMS4yMy1iaW4uamFyIiBzaXplPSI4MzQxMjYiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgPC9yZXNvdXJjZXM+DQogIDxhcHBsZXQtZGVzYyAgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIG1haW4tY2xhc3M9ImNvbS5qYXZhZngubWFpbi5Ob0phdmFGWEZhbGxiYWNrIiAgbmFtZT0iUmVzdGF1cmFudCBCaWxsaW5nIE1hbmFnZW1lbnQgU3lzdGVtIiA+DQogICAgPHBhcmFtIG5hbWU9InJlcXVpcmVkRlhWZXJzaW9uIiB2YWx1ZT0iOC4wKyIvPg0KICA8L2FwcGxldC1kZXNjPg0KICA8amZ4OmphdmFmeC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0icmVzdGF1cmFudC5iaWxsaW5nLnN5c3RlbS5CaWxsaW5nU3lzdGVtIiAgbmFtZT0iUmVzdGF1cmFudCBCaWxsaW5nIE1hbmFnZW1lbnQgU3lzdGVtIiAvPg0KICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4NCjwvam5scD4NCg=='
+            },
+            {
+                javafx : '8.0+',
+                jvmargs : '-splash:src/restaurant/billing/system/fxml/splash.gif '
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedrestaurant.billing.system() {
+        dtjava.embed(
+            {
+                id : 'restaurant.billing.system',
+                url : 'Restaurant Billing Management System.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iUmVzdGF1cmFudCBCaWxsaW5nIE1hbmFnZW1lbnQgU3lzdGVtLmpubHAiPg0KICA8aW5mb3JtYXRpb24+DQogICAgPHRpdGxlPlJlc3RhdXJhbnQgQmlsbGluZyBNYW5hZ2VtZW50IFN5c3RlbTwvdGl0bGU+DQogICAgPHZlbmRvcj5BYmVsPC92ZW5kb3I+DQogICAgPGRlc2NyaXB0aW9uPm51bGw8L2Rlc2NyaXB0aW9uPg0KICAgIDxvZmZsaW5lLWFsbG93ZWQvPg0KICA8L2luZm9ybWF0aW9uPg0KICA8cmVzb3VyY2VzPg0KICAgIDxqMnNlIHZlcnNpb249IjEuNisiIGphdmEtdm0tYXJncz0iLXNwbGFzaDpzcmMvcmVzdGF1cmFudC9iaWxsaW5nL3N5c3RlbS9meG1sL3NwbGFzaC5naWYgIiAgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPg0KICAgIDxqYXIgaHJlZj0ibGliXG15c3FsLWNvbm5lY3Rvci1qYXZhLTUuMS4yMy1iaW4uamFyIiBzaXplPSI4MzQxMjYiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgPC9yZXNvdXJjZXM+DQogIDxhcHBsZXQtZGVzYyAgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIG1haW4tY2xhc3M9ImNvbS5qYXZhZngubWFpbi5Ob0phdmFGWEZhbGxiYWNrIiAgbmFtZT0iUmVzdGF1cmFudCBCaWxsaW5nIE1hbmFnZW1lbnQgU3lzdGVtIiA+DQogICAgPHBhcmFtIG5hbWU9InJlcXVpcmVkRlhWZXJzaW9uIiB2YWx1ZT0iOC4wKyIvPg0KICA8L2FwcGxldC1kZXNjPg0KICA8amZ4OmphdmFmeC1kZXNjICB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgbWFpbi1jbGFzcz0icmVzdGF1cmFudC5iaWxsaW5nLnN5c3RlbS5CaWxsaW5nU3lzdGVtIiAgbmFtZT0iUmVzdGF1cmFudCBCaWxsaW5nIE1hbmFnZW1lbnQgU3lzdGVtIiAvPg0KICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4NCjwvam5scD4NCg=='
+            },
+            {
+                javafx : '8.0+',
+                jvmargs : '-splash:src/restaurant/billing/system/fxml/splash.gif '
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedrestaurant.billing.system);
+</script>
+
+</head><body>
+<h2>Test page for <b>Restaurant Billing Management System</b></h2>
+  <b>Webstart:</b> <a href='Restaurant Billing Management System.jnlp' onclick="return launchApplication('Restaurant Billing Management System.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>
